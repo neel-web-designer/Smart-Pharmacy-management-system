@@ -1,0 +1,219 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Pharmacy Management System</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <aside class="sidebar">
+        <h2 class="logo">✚ SmartPharma</h2>
+        <p class="subtitle">MANAGEMENT SYSTEM</p>
+
+       
+<nav>
+    <a href="./index.html">▦ Dashboard</a>
+    <a href="./pages/medicines.html">💊 Medicine Management</a>
+    <a href="./pages/billing.html">🧾 Billing</a>
+    <a href="./pages/reports.html">📊 Reports</a>
+    <a href="./pages/stock-alerts.html">⚠ Stock Alerts</a>
+</nav>
+
+
+        <div class="sidebar-footer">
+            <b>Smart Pharmacy Management Project BY NEEL KAMAL</b><br>
+            <span>Frontend Demo Project</span>
+        </div>
+    </aside>
+
+    <main class="main-content">
+
+        <header class="topbar">
+            <div>
+                <p class="eyebrow">PHARMACY OVERVIEW</p>
+                <h1>Dashboard</h1>
+                <p class="muted">Welcome to Smart Pharmacy Management System.</p>
+            </div>
+
+            <div class="admin-badge">
+                <span class="admin-icon">A</span>
+                <div>
+                    <strong>Neel kamal</strong>
+                    <small>Administrator</small>
+                </div>
+            </div>
+        </header>
+
+        <section class="stats-grid">
+            <article class="stat-card">
+                <div class="stat-icon purple">💊</div>
+                <p>Total Medicines</p>
+                <h2>248</h2>
+                <span class="stat-note">Medicine inventory overview</span>
+            </article>
+
+            <article class="stat-card">
+                <div class="stat-icon green">₹</div>
+                <p>Today's Sales</p>
+                <h2>₹12,450</h2>
+                <span class="stat-note">Sample dashboard figure</span>
+            </article>
+
+            <article class="stat-card">
+                <div class="stat-icon orange">⚠</div>
+                <p>Low Stock Items</p>
+                <h2>08</h2>
+                <span class="stat-note">Sample stock alert</span>
+            </article>
+
+            <article class="stat-card">
+                <div class="stat-icon red">◷</div>
+                <p>Near Expiry</p>
+                <h2>05</h2>
+                <span class="stat-note">Sample expiry alert</span>
+            </article>
+        </section>
+
+        <section class="content-grid">
+
+            <article class="panel medicine-panel">
+                <div class="panel-heading">
+                    <div>
+                        <h2>Medicine Management</h2>
+                        <p class="muted">Sample medicine inventory</p>
+                    </div>
+                    <span class="tag">INVENTORY</span>
+                </div>
+
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Medicine</th>
+                                <th>Category</th>
+                                <th>Price</th>
+                                <th>Quantity</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Paracetamol</strong></td>
+                                <td>Tablet</td>
+                                <td>₹25</td>
+                                <td>120</td>
+                                <td><span class="status available">In Stock</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Amoxicillin</strong></td>
+                                <td>Capsule</td>
+                                <td>₹85</td>
+                                <td>45</td>
+                                <td><span class="status available">In Stock</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Vitamin C</strong></td>
+                                <td>Supplement</td>
+                                <td>₹60</td>
+                                <td>08</td>
+                                <td><span class="status low">Low Stock</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Cough Syrup</strong></td>
+                                <td>Syrup</td>
+                                <td>₹95</td>
+                                <td>05</td>
+                                <td><span class="status low">Low Stock</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="panel-footer">
+                    <span>Showing 4 sample medicines</span>
+                    <span class="text-link">View Inventory →</span>
+                </div>
+            </article>
+
+            <article class="panel billing-panel">
+                <div class="panel-heading">
+                    <div>
+                        <h2>Billing</h2>
+                        <p class="muted">Invoice preview</p>
+                    </div>
+                    <span class="invoice-icon">▤</span>
+                </div>
+
+                <div class="invoice">
+                    <div class="invoice-top">
+                        <div>
+                            <span class="muted">INVOICE NUMBER</span>
+                            <h3>INV-001</h3>
+                        </div>
+                        <span class="status available">Demo</span>
+                    </div>
+
+                    <div class="invoice-line">
+                        <span>Paracetamol × 2</span>
+                        <strong>₹50</strong>
+                    </div>
+                    <div class="invoice-line">
+                        <span>Vitamin C × 1</span>
+                        <strong>₹60</strong>
+                    </div>
+
+                    <div class="invoice-total">
+                        <span>Total Amount</span>
+                        <strong>₹110</strong>
+                    </div>
+                </div>
+
+                <div class="demo-button">Generate Bill · Demo Only</div>
+                <p class="button-note">Static preview — no bill is generated.</p>
+            </article>
+
+        </section>
+
+        <section class="panel alerts-panel">
+            <div class="panel-heading">
+                <div>
+                    <h2>Stock Alerts</h2>
+                    <p class="muted">Sample inventory notifications</p>
+                </div>
+                <span class="tag warning-tag">2 ALERTS</span>
+            </div>
+
+            <div class="alert-item">
+                <div class="alert-symbol orange">!</div>
+                <div class="alert-details">
+                    <strong>Vitamin C</strong>
+                    <p>Only 8 units remaining in stock.</p>
+                </div>
+                <span class="status low">Low Stock</span>
+            </div>
+
+            <div class="alert-item">
+                <div class="alert-symbol red">◷</div>
+                <div class="alert-details">
+                    <strong>Cough Syrup</strong>
+                    <p>Expiry review required — sample alert.</p>
+                </div>
+                <span class="status expiring">Near Expiry</span>
+            </div>
+        </section>
+
+        <footer>
+            <span>Smart Pharmacy Management Project</span>
+            <span>HTML · CSS · JavaScript</span>
+            <b><span>Developed by Neel kamal</span></b>
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
